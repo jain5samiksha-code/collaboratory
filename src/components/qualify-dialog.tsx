@@ -44,10 +44,10 @@ export function QualifyDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
-        className="max-h-[90vh] overflow-y-auto border-0 bg-transparent p-0 shadow-none ring-0 sm:max-w-lg"
+        className="max-h-[90vh] overflow-y-auto sm:max-w-lg"
         showCloseButton
       >
-        <Card>
+        <Card variant="default">
           <CardContent className="space-y-6 pt-4">
             <div className="flex flex-col items-center text-center">
               <div className="flex items-center gap-2">

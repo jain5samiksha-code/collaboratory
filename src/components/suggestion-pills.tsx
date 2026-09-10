@@ -51,11 +51,11 @@ export function SuggestionPills({
                 onPick?.(option.id)
               }}
               className={cn(
-                "rounded-full px-3 py-1.5 text-left text-tag font-semibold",
+                "rounded-full px-3 py-1.5 text-left text-tag font-semibold leading-[18px]",
                 horizontal ? "w-auto" : "w-full",
                 selected
-                  ? "bg-muted text-foreground ring-1 ring-primary/40"
-                  : "bg-muted text-foreground hover:bg-muted/80"
+                  ? "bg-default text-foreground ring-1 ring-primary/40"
+                  : "bg-default text-foreground hover:bg-default/80"
               )}
             >
               {option.label}

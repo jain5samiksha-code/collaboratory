@@ -28,6 +28,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      data-theme="light"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} ${sourceSerif.variable} light h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">

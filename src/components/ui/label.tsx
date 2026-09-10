@@ -1,17 +1,14 @@
 "use client"
 
-import * as React from "react"
+import type { ComponentProps } from "react"
+import { Label as HeroLabel } from "@heroui/react"
 
 import { cn } from "@/lib/utils"
 
-function Label({ className, ...props }: React.ComponentProps<"label">) {
+function Label({ className, ...props }: ComponentProps<typeof HeroLabel>) {
   return (
-    <label
-      data-slot="label"
-      className={cn(
-        "flex items-center gap-2 text-body leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50",
-        className
-      )}
+    <HeroLabel
+      className={cn("text-body font-medium", className)}
       {...props}
     />
   )

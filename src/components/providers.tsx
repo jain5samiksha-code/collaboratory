@@ -1,13 +1,13 @@
 "use client"
 
-import { TooltipProvider } from "@/components/ui/tooltip"
+import type { ReactNode } from "react"
 import { Toaster } from "@/components/ui/sonner"
 
-export function Providers({ children }: { children: React.ReactNode }) {
+export function Providers({ children }: { children: ReactNode }) {
   return (
-    <TooltipProvider>
+    <>
       {children}
       <Toaster />
-    </TooltipProvider>
+    </>
   )
 }
