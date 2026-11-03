@@ -62,7 +62,7 @@ function SheetTitle({ className, ...props }: ComponentProps<typeof Drawer.Headin
 }
 
 function SheetDescription({ className, ...props }: ComponentProps<"p">) {
-  return <p className={cn("text-sm text-muted", className)} {...props} />
+  return <p className={cn("text-sm text-muted-foreground", className)} {...props} />
 }
 
 export {

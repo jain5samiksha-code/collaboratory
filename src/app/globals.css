@@ -8,7 +8,11 @@
   --font-heading: var(--font-serif);
   --color-primary: var(--accent);
   --color-primary-foreground: var(--accent-foreground);
+  /* HeroUI's --muted is a text grey and --accent is maroon; app fills need the original cream and gold wash. */
+  --color-muted: #f6f3ee;
   --color-muted-foreground: var(--muted);
+  --color-accent: #fff8dd;
+  --color-accent-foreground: #8c1d40;
   --color-card: var(--surface);
   --color-card-foreground: var(--surface-foreground);
   --color-popover: var(--overlay);

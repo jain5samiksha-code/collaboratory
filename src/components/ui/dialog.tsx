@@ -62,7 +62,7 @@ function DialogTitle({ className, ...props }: ComponentProps<typeof Modal.Headin
 }
 
 function DialogDescription({ className, ...props }: ComponentProps<"p">) {
-  return <p className={cn("text-sm text-muted", className)} {...props} />
+  return <p className={cn("text-sm text-muted-foreground", className)} {...props} />
 }
 
 export {
